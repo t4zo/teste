@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import styles from './index.module.scss';
 
+// import { prefix } from '../next-prefix.js';
+
 import sacaImage from '../public/assets/images/saca.jpg';
 import saedImage from '../public/assets/images/saed.jpg';
 import netflixImage from '../public/assets/images/netflix.jpg';
