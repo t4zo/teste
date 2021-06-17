@@ -22,11 +22,11 @@ export default function HomePage() {
   return (
     <div className='m-auto min-h-screen flex flex-col justify-center align-center bg-white dark:bg-[#191919] text-black dark:text-gray-300'>
       <main className='p-20 flex flex-col flex-1 justify-center items-center'>
-        <h1 className='text-center m-0 text-7xl leading-tight'>
-          <span className='dark:text-gray-200 hover:text-primary-600 hover:cursor-pointer'>
+        <h1 className='text-center m-0 text-5xl lg:text-7xl leading-tight'>
+          <span className='hover:text-primary-600 hover:cursor-pointer dark:text-gray-200 dark:hover:text-primary-600'>
             <span className='text-primary-600'>T</span>ácio de <span className='text-primary-600'>S</span>ouza <span className='text-primary-600'>C</span>ampos
-            |{' '}
           </span>
+          <span>{' '}|{' '}</span>
           <Link href='/contact'>
             <a className='text-primary-600 no-underline hover:underline focus:underline'>Contato</a>
           </Link>
@@ -37,13 +37,13 @@ export default function HomePage() {
           <Switch condition={darkTheme} changeCondition={toggleTheme} offIcon={'&#x2600;&#xFE0F;'} onIcon={'&#127769;'} />
           {/* <Switch condition={darkTheme} changeCondition={toggleTheme} offIcon={🌙} onIcon={☀️} /> */}
         </p>
-        <div className='flex justify-center items-center flex-wrap max-w-[1400px] mt-12'>
+        <div className='flex justify-center items-center flex-wrap lg:max-w-[1400px] mt-12'>
           <a
             href='https://play.google.com/store/apps/details?id=xyz.saca'
             className={`${styles.card} dark:hover:text-white dark:border-[#eaeaea]`}
             target='_blank'>
-            <div className='flex'>
-              <div className='p-6'>
+            <div className='flex w-[70vw] lg:w-full'>
+              <div className='p-6 pb-12'>
                 <div className='flex items-center mb-[16px] space-x-2'>
                   <h3>SACA</h3>
                   <span>&rarr;</span>
@@ -55,8 +55,8 @@ export default function HomePage() {
             </div>
           </a>
           <a href='http://159.89.244.218' className={`${styles.card} dark:hover:text-white dark:border-[#eaeaea]`} target='_blank'>
-            <div className='flex'>
-              <div className='p-6'>
+            <div className='flex w-[70vw] lg:w-full'>
+              <div className='p-6 pb-12'>
                 <div className='flex items-center mb-[16px] space-x-2'>
                   <h3>SAED</h3>
                   <span>&rarr;</span>
@@ -68,8 +68,8 @@ export default function HomePage() {
             </div>
           </a>
           <a href='https://pgpjuazeiroba.com.br' className={`${styles.card} dark:hover:text-white dark:border-[#eaeaea]`} target='_blank'>
-            <div className='flex'>
-              <div className='p-6'>
+            <div className='flex w-[70vw] lg:w-full'>
+              <div className='p-6 pb-12'>
                 <div className='flex items-center mb-[16px] space-x-2'>
                   <h3>PGP</h3>
                   <span>&rarr;</span>
@@ -81,8 +81,8 @@ export default function HomePage() {
             </div>
           </a>
           <a href='https://netflix-9zvv4lgoy-tacio.vercel.app' className={`${styles.card} dark:hover:text-white dark:border-[#eaeaea]`} target='_blank'>
-            <div className='flex'>
-              <div className='p-6'>
+            <div className='flex w-[70vw] lg:w-full'>
+              <div className='p-6 pb-12'>
                 <div className='flex items-center mb-[16px] space-x-2'>
                   <h3>Netflix</h3>
                   <span>&rarr;</span>
@@ -94,8 +94,8 @@ export default function HomePage() {
             </div>
           </a>
           <a href='https://covid19-tracker-azure.vercel.app' className={`${styles.card} dark:hover:text-white dark:border-[#eaeaea]`} target='_blank'>
-            <div className='flex'>
-              <div className='p-6'>
+            <div className='flex w-[70vw] lg:w-full'>
+              <div className='p-6 pb-12'>
                 <div className='flex items-center mb-[16px] space-x-2'>
                   <h3>Covid 19</h3>
                   <span>&rarr;</span>
@@ -107,8 +107,8 @@ export default function HomePage() {
             </div>
           </a>
           <a href='https://osfedera.netlify.app' className={`${styles.card} dark:hover:text-white dark:border-[#eaeaea]`} target='_blank'>
-            <div className='flex'>
-              <div className='p-6'>
+            <div className='flex w-[70vw] lg:w-full'>
+              <div className='p-6 pb-12'>
                 <div className='flex items-center mb-[16px] space-x-2'>
                   <h3>Os Federa</h3>
                   <span>&rarr;</span>
