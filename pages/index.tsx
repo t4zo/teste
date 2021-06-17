@@ -17,9 +17,6 @@ import osFederaImage from '../public/assets/images/osFedera.png';
 import covid19Image from '../public/assets/images/covid-19.jpg';
 
 export default function HomePage() {
-  // function customImageLoader({ src, width, quality }) {
-  //   return `https://example.com/${src}?w=${width}&q=${quality || 75}`
-  // }
   const { darkTheme, toggleTheme } = useContext(ThemeContext);
 
   return (
@@ -79,8 +76,8 @@ export default function HomePage() {
                 </div>
                 <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
               </div>
-              {/* <img src={pgpImage} alt='Imagem SAED' className={styles.cardImage} placeholder='blur' height={200} width={350} objectFit='cover' /> */}
-              <img src='assets/images/pgp.png' alt='Imagem SAED' className={styles.cardImage} placeholder='blur' height={180} width={271} />
+              <Image src={pgpImage} alt='Imagem SAED' className={styles.cardImage} placeholder='blur' height={200} width={350} objectFit='cover' />
+              {/* <img src='assets/images/pgp.png' alt='Imagem SAED' className={styles.cardImage} placeholder='blur' height={180} width={271} /> */}
             </div>
           </a>
           <a href='https://netflix-9zvv4lgoy-tacio.vercel.app' className={`${styles.card} dark:hover:text-white dark:border-[#eaeaea]`} target='_blank'>

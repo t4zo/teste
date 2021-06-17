@@ -6,12 +6,9 @@ import { ThemeContextProvider } from '../contexts/themeContext';
 import 'tailwindcss/tailwind.css';
 import '../global.css';
 
-// import 'normalize.css';
-// import 'styles/_base.scss';
-
 export default function MyApp({ Component, pageProps }: AppProps) {
   if (typeof window !== 'undefined') {
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (localStorage.theme === 'dark'/*|| (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)*/) {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');

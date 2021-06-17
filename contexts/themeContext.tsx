@@ -18,7 +18,7 @@ export function ThemeContextProvider({ children }: Props) {
   const [darkTheme, setDarkTheme] = useState(false);
 
   useEffect(() => {
-    setDarkTheme(localStorage.theme === 'dark');
+    setDarkTheme(localStorage.getItem('theme') === 'dark');
   }, []);
 
   function toggleTheme() {
