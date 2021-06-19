@@ -7,7 +7,7 @@ interface Props {
 
 export default function Switch({ condition, changeCondition, offIcon, onIcon }: Props) {
   return (
-    <label htmlFor='toggleTheme' className='fixed top-8 right-4 w-[50px] h-[24px] rounded-3xl flex cursor-pointer bg-[#191919] dark:bg-gray-700'>
+    <label htmlFor='toggleTheme' className='fixed top-8 right-4 w-[50px] h-[24px] rounded-3xl flex cursor-pointer bg-[#191919] dark:bg-gray-700 z-50'>
       <input type='checkbox' className='hidden' name='toggleTheme' id='toggleTheme' onChange={changeCondition} checked={condition} />
       <span className='w-1/2 text-base text-center pointer-events-none' dangerouslySetInnerHTML={{ __html: offIcon }}></span>
       <span className='w-1/2 text-base text-center pointer-events-none'dangerouslySetInnerHTML={{ __html: onIcon }}></span>
