@@ -18,8 +18,7 @@ export default function HomePage() {
   const { darkTheme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <div className='m-auto min-h-screen flex flex-col justify-center align-center bg-white dark:bg-[#191919] text-black dark:text-gray-300'>
-      <main className='p-20 flex flex-col flex-1 justify-center items-center'>
+    <main className='px-10 py-20 m-auto min-h-screen flex flex-col justify-center items-center bg-white dark:bg-[#191919] text-black dark:text-gray-300'>
         <Switch condition={darkTheme} changeCondition={toggleTheme} offIcon={'&#x2600;&#xFE0F;'} onIcon={'&#127769;'} />
         <h1 className='text-center m-0 text-4xl md:text-5xl lg:text-7xl leading-tight'>
           <span className='hover:text-primary-600 hover:cursor-pointer dark:text-gray-200 dark:hover:text-primary-600'>
@@ -30,7 +29,8 @@ export default function HomePage() {
             <a className='text-primary-600 no-underline hover:underline focus:underline'>Contato</a>
           </Link>
         </h1>
-        <div className='flex justify-center items-center flex-wrap lg:max-w-[1400px] mt-12'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-5 lg:max-w-6xl mt-12'>
+        {/* <div className='flex justify-center items-center flex-wrap lg:max-w-[1200px] mt-12'> */}
           <Card link='https://play.google.com/store/apps/details?id=xyz.saca' image={sacaImage} title='SACA' content='Find in-depth information about Next.js features and API.' />
           <Card link='http://159.89.244.218' image={saedImage} title='SAED' content='Learn about Next.js in an interactive course with quizzes!' />
           <Card link='https://pgpjuazeiroba.com.br' image={pgpImage} title='PGP' content='Instantly deploy your Next.js site to a public URL with Vercel.' />
@@ -38,9 +38,8 @@ export default function HomePage() {
           <Card link='https://covid19-tracker-azure.vercel.app' image={covid19Image} title='Covid19' content='Instantly deploy your Next.js site to a public URL with Vercel.' />
           <Card link='https://osfedera.netlify.app' image={osFederaImage} title='Os Federa' content='Instantly deploy your Next.js site to a public URL with Vercel.' />
         </div>
-      </main>
 
       <Footer />
-    </div>
+    </main>
   );
 }

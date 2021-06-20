@@ -10,14 +10,14 @@ interface Props {
 
 export default function Card({ link, image, title, content }: Props) {
   return (
-    <a href={link} className={`${styles.card} dark:hover:text-white dark:border-[#eaeaea]`} target='_blank'>
-      <div className='flex flex-col md:flex-row w-[70vw] lg:w-full'>
+    <a href={link} className={`${styles.card} dark:hover:text-white dark:border-white`} target='_blank'>
+      <div className='flex flex-col md:flex-row md:order-2'>
         {/* <div className='md:order-2'> */}
         {/* <div className='aspect-w-16 aspect-h-9'> */}
         <Image
           src={image}
           alt={`Imagem do ${title}`}
-          className='rounded-t-[7px] md:rounded-none md:rounded-l-[7px]'
+          className='rounded-t-md md:rounded-none md:rounded-l-md'
           placeholder='blur'
           width={350}
           height={200}
@@ -28,7 +28,7 @@ export default function Card({ link, image, title, content }: Props) {
         {/* </div> */}
         {/* <img src={`assets/images/${title.replaceAll(' ', '').toLowerCase()}`} alt={`Imagem do ${title}`} className='rounded-t-[7px] md:rounded-none md:rounded-l-[7px]' width={271} height={180} /> */}
         <div className='p-4 pb-4'>
-          <div className='flex items-center mb-[16px] space-x-2'>
+          <div className='flex items-center mb-4 space-x-2'>
             <h3>{title}</h3>
             <span>&rarr;</span>
           </div>
