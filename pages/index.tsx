@@ -30,17 +30,15 @@ export default function HomePage() {
             <a className='text-primary-600 no-underline hover:underline focus:underline'>Contato</a>
           </Link>
         </h1>
-        <div className='grid gap-5 grid-cols-1 lg:grid-cols-2 w-full mt-12 lg:max-w-7xl'>
-        {/* <div className='flex justify-center items-center flex-wrap lg:max-w-[1200px] mt-12'> */}
-          <Card link='https://play.google.com/store/apps/details?id=xyz.saca' image={sacaImage} title='SACA' content='Sistema Auxiliar de Comunicação Alternativa - aplicativo móvel voltado para ajudar crianças com problemas de comunicação' />
+        <div className='grid gap-5 grid-cols-1 lg:grid-cols-2 w-full mt-12 lg:max-w-6xl'>
+          <Card link='https://play.google.com/store/apps/details?id=xyz.saca' image={sacaImage} title='SACA' content='Aplicativo móvel voltado para ajudar crianças com problemas de comunicação' />
           <Card link='http://159.89.244.218' image={saedImage} title='SAED' content='Sistema de avaliação de desempenho escolar através da resolução de questões elobaradas pelos professores' />
-          <Card link='https://pgpjuazeiroba.com.br' image={pgpImage} title='PGP' content='Programa de Governo Participativo, um portal feito para o candidato a prefeito de Juazeiro, Paulo Bomfim no período eleitoral' />
-          <Card link='https://netflix-9zvv4lgoy-tacio.vercel.app' image={netflixImage} title='Netflix' content='Projeto pessoal realizando um clone com possibilidadae de criação de contas e atualização periódica de conteúdos' />
-          <Card link='https://covid19-tracker-azure.vercel.app' image={covid19Image} title='Covid19' content='Sistema para rastreamento por país ou global, de casos e mortes confirmadas pela doença' />
+          <Card link='https://pgpjuazeiroba.com.br' image={pgpImage} title='PGP' content='Programa de Governo Participativo, um portal feito em 2020 para o então candidato a prefeito de Juazeiro, Paulo Bomfim no período eleitoral' />
+          <Card link='https://netflix-9zvv4lgoy-tacio.vercel.app' image={netflixImage} title='Netflix' content='Projeto pessoal realizando um clone com a possibilidade de criação de contas e atualização periódica do catálogo de Séries e Filmes' />
+          <Card link='https://covid19-tracker-azure.vercel.app' image={covid19Image} title='Covid19' content='Sistema para rastreamento de casos e mortes confirmadas da Covid19 por país ou globalmente' />
           <Card link='https://osfedera.netlify.app' image={osFederaImage} title='Os Federa' content='Projeto para o professor, afim de atualizar seu site pessoal' />
         </div>
       </main>
-
       <Footer />
     </div>
   );

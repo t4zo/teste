@@ -6,6 +6,9 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
+      gridTemplateRows: {
+        '2min': 'repeat(2, min-content)'
+      },
       colors: {
         // primary: colors.purple,
         primary: {
