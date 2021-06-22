@@ -11,7 +11,7 @@ interface Props {
 export default function Card({ link, image, title, content }: Props) {
   return (
     <a href={link} className={`${styles.card} dark:hover:text-white dark:border-white`} target='_blank'>
-      <div className='flex flex-col md:flex-row md:order-2'>
+      <div className='flex flex-col md:flex-row md:order-2 h-full'>
         {/* <div className='md:order-2'> */}
         {/* <div className='aspect-w-16 aspect-h-9'> */}
         <Image
@@ -32,7 +32,7 @@ export default function Card({ link, image, title, content }: Props) {
             <h3>{title}</h3>
             <span>&rarr;</span>
           </div>
-          <p>{content}</p>
+          <div className='text-sm'>{content}</div>
         </div>
       </div>
     </a>
